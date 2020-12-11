@@ -21,6 +21,8 @@ html{
 body{
     font-family: 'Kumbh Sans', sans-serif;
     background-color:var(--dark-cyan);
+
+   
 }
 
 /* inizio file*/
@@ -46,9 +48,56 @@ h1{
     // & rempleza alla classe precedente
     &-header{
         width: 100%;
+        display: block;
     }
-}
 
-.card-body{
-    text-align: center;
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgba(153, 153, 153, 0.911);
+
+        &-img{
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: -53px;
+        }
+
+        &-text, &-title span{
+            color: var(--Dark-gray);
+            font-weight: 400;
+        }
+
+        &-text{
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &-title span{
+            font-size: 1.3rem;
+            margin-left: 0.7rem;
+        }
+    }
+
+    &-footer{
+        margin-top: 1.2rem;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5rem;
+        text-align: center;
+
+        &-info{
+            letter-spacing: 1px;
+
+            &-number{
+                font-weight: bold;
+                font-size: 2.5rem;
+            }
+
+            &-text{
+                color: var(--Dark-gray);
+            }
+        }
+    }
+
 }
