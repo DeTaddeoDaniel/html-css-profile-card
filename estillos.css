@@ -20,6 +20,9 @@ html {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: var(--dark-cyan);
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-top.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -50vw top -50vh, right -50vw bottom -50vh;
 }
 
 /* inizio file*/
@@ -44,6 +47,7 @@ h1 {
   background-color: white;
   width: 375px;
   border-radius: 15px;
+  overflow: hidden;
   -webkit-box-shadow: 0px 0px lightblue;
           box-shadow: 0px 0px lightblue;
 }
